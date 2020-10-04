@@ -92,8 +92,8 @@
 - **DOWNLOAD YOUTUBE VIDEO WITH WGET**
 ```bash
  wget http://www.youtube.com/watch?v=dQw4w9WgXcQ -qO- | sed -n "/fmt_url_map/{s/[\'\"\|]/\n/g;p}" | sed -n '/^fmt_url_map/,/videoplayback/p' | sed -e :a -e '$q;N;5,$D;ba' | tr -d '\n' | sed -e 's/\(.*\),\(.\)\{1,3\}/\1/' | wget -i - -O surprise.flv 
- CONDITIONS - YOU'VE TO PUT YOUTUBE VIDEO LINK IN THE LINK AREA AND SET THE FILE NAME THAT YOU WANT TO SAVE IT.
 ```
+>NOTE - YOU'VE TO PUT YOUTUBE VIDEO LINK IN THE LINK AREA & SET THE FILE NAME THAT YOU WANT TO SAVE IT.
  
 - **BINARY CLOCK**
 ```bash
@@ -103,14 +103,14 @@
 - **DOWNLOAD ALL IMAGES FROM A PERTICULAR SITE**
 ```bash
  wget -r -l1 --no-parent -nH -nd -P/tmp -A".gif,.jpg" http://example.com/images
- CONDITIONS - YOU'VE TO PUT YOUR SITE NAME IN LINK SECTION
 ```
+>NOTE - YOU'VE TO PUT YOUR SITE NAME IN LINK SECTION
  
 - **CONVERT YOUTUBE VIDEOS TO MP3**
 ```bash
  youtube-dl -t --extract-audio --audio-format mp3 http://www.youtube.com/watch?v=dQw4w9WgXcQ
- CONDITIONS - YOU'VE TO PUT YOUR YOUTUBE VIDEO LINK IN THE LINK SECTIONS
 ```
+>NOTE - YOU'VE TO PUT YOUR YOUTUBE VIDEO LINK IN THE LINK SECTIONS
  
 - **QUICK ACCESS TO ASCII CODE OF A KEY**
 ```bash
